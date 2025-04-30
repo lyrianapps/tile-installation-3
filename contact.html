@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>About Us - Bizfinity Multipurpose Business & Consulting HTML Template.</title>
-    <meta name="description" content="" />
+    <title>Contact - TilePro Solutions</title>
+    <meta name="description" content="Get in touch with TilePro Solutions for your tiling needs." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
     <!-- Place favicon.ico in the root directory -->
@@ -24,7 +24,85 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-
+    <style>
+        /* Custom Styles for Contact Page */
+        .contact {
+            padding: 60px 0;
+        }
+        .contact-form {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form .form-control {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .contact-form .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form .btn:hover {
+            background: #0056b3;
+        }
+        .contact-info {
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info ul li i {
+            font-size: 18px;
+            margin-right: 10px;
+            color: #007bff;
+        }
+        .contact-info .social-links {
+            margin-top: 20px;
+        }
+        .contact-info .social-links li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .contact-info .social-links li a {
+            font-size: 18px;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        .contact-info .social-links li a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -95,22 +173,20 @@
                                     <a class="page-scroll" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll active" href="about-us.html">About Us</a>
+                                    <a class="page-scroll" href="about-us.html">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="services.html" class="page-scroll" href="javascript:void(0)">Services</a>
+                                    <a href="services.html" class="page-scroll">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="portfolio.html" class="page-scroll" href="javascript:void(0)">Portfolio</a>
+                                    <a href="portfolio.html" class="page-scroll">Portfolio</a>
                                 </li>
                                
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="javascript:void(0)">Contact</a>
-                                </li>
+                            
                             </ul>
                         </div> <!-- navbar collapse -->
                         <div class="button">
-                            <a href="javascript:void(0)" class="btn white-bg mouse-dir">Get a Quote <span class="dir-part"></span></a>
+                            <a href="contact.html" class="btn white-bg mouse-dir">Get a Quote <span class="dir-part"></span></a>
                         </div>
                     </nav> <!-- navbar -->
                 </div>
@@ -121,220 +197,67 @@
     </header>
     <!-- ========================= header end ========================= -->
 
-    <!-- Start Breadcrumbs -->
+    <!-- Breadcrumbs -->
     <div class="breadcrumbs" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content left">
-                        <h1 class="page-title">About Us</h1>
-                        <p>Business plan draws on a wide range of knowledge from different business disciplines. Business draws on a wide range of different business .</p>
+                        <h1 class="page-title">Contact Us</h1>
+                        <p>We'd love to hear from you! Fill out the form below or reach out to us directly.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="breadcrumbs-content right">
-                        <ul class="breadcrumb-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li>About Us</li>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="contact-form">
+                        <h2>Request A Quote</h2>
+                        <form action="submit-contact.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>Feel free to reach out to us using the following details:</p>
+                        <ul>
+                            <li><i class="lni lni-phone"></i> Phone: (+123) 456-7890</li>
+                            <li><i class="lni lni-envelope"></i> Email: <a href="mailto:info@tilepro.com">info@tilepro.com</a></li>
+                            <li><i class="lni lni-map-marker"></i> Address: 123 Tile Street, USA</li>
+                        </ul>
+                        <h3>Follow Us</h3>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                            <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                            <li><a href="#"><i class="lni lni-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Breadcrumbs -->
-
-	<!-- Start Features Area -->
-    <section class="Features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="feature-right wow fadeInUp" data-wow-delay=".3s">
-                        <div class="watch-inner">
-                            <div class="video-head wow zoomIn" data-wow-delay="0.4s">
-                                <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="glightbox video"><i class="lni lni-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="feature-content">
-                        <div class="title">
-                            <span class="wow fadeInRight" data-wow-delay=".3s">Our Introduction</span>
-                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Consulting Market <br> Leader Experts</h3>
-                        </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-bar-chart"></i>
-                            </div>
-                            <div class="banner-content">
-                                <h2 class="title">Grow Your Business With US</h2>
-                                <p>Lorem ipsum dolor sit amet, diam felis maecenas lectus ac, volutpat arcu, urna ac. Vivamus dignissim sapien amet vivamu</p>
-                            </div>
-                        </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-checkmark-circle"></i>
-                            </div>
-                            <div class="banner-content">
-                                <h2 class="title">Fast Loan Approval</h2>
-                                <p>Lorem ipsum dolor sit amet, diam felis maecenas lectus ac, volutpat arcu, urna ac. Vivamus dignissim sapien amet vivamu</p>
-                            </div>
-                        </div>
-                        <div class="feature-item wow fadeInUp" data-wow-delay=".7s">
-                            <div class="feature-thumb">
-                                <i class="lni lni-support"></i>
-                            </div>
-                            <div class="banner-content">
-                                <h2 class="title">Life Time Support</h2>
-                                <p>Lorem ipsum dolor sit amet, diam felis maecenas lectus ac, volutpat arcu, urna ac. Vivamus dignissim sapien amet vivamu</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-    <!-- End Features Area -->
-
-	<!-- Start Service Area -->
-    <section class="services section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-12">
-                    <div class="section-title">
-                        <span class="wow fadeInDown" data-wow-delay=".2s">What We Offer You</span>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Tile Installation Services</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">We provide a wide range of tile contracting services to meet your needs, ensuring quality and satisfaction for every project.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service wow fadeInUp" data-wow-delay=".2s">
-                        <div class="serial">
-                            <span><i class="lni lni-bricks"></i></span>
-                        </div>
-                        <h3>Floor Tile Installation</h3>
-                        <p>We specialize in installing durable and stylish floor tiles for residential and commercial spaces, ensuring a perfect finish every time.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service wow fadeInUp" data-wow-delay=".3s">
-                        <div class="serial">
-                            <span><i class="lni lni-layout"></i></span>
-                        </div>
-                        <h3>Wall Tile Installation</h3>
-                        <p>Enhance your walls with expertly installed tiles, perfect for kitchens, bathrooms, and feature walls that stand out.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service wow fadeInUp" data-wow-delay=".4s">
-                        <div class="serial">
-                            <span><i class="lni lni-drop"></i></span>
-                        </div>
-                        <h3>Waterproofing & Tiling</h3>
-                        <p>We provide waterproofing solutions along with tile installations to ensure long-lasting and moisture-resistant results.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service wow fadeInUp" data-wow-delay=".5s">
-                        <div class="serial">
-                            <span><i class="lni lni-ruler-pencil"></i></span>
-                        </div>
-                        <h3>Custom Tile Designs</h3>
-                        <p>Bring your vision to life with our custom tile design services tailored to your preferences and style.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service wow fadeInUp" data-wow-delay=".6s">
-                        <div class="serial">
-                            <span><i class="lni lni-home"></i></span>
-                        </div>
-                        <h3>Outdoor Tiling</h3>
-                        <p>Upgrade your outdoor spaces with weather-resistant tiles for patios, walkways, and more, combining durability with aesthetics.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-service wow fadeInUp" data-wow-delay=".7s">
-                        <div class="serial">
-                            <span><i class="lni lni-support"></i></span>
-                        </div>
-                        <h3>Repair & Maintenance</h3>
-                        <p>We offer tile repair and maintenance services to keep your tiles looking as good as new, ensuring long-term satisfaction.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /End Services Area -->
-
-    <!-- Start Clients Area -->
-    <section class="client-logo-section">
-        <div class="container">
-            <div class="client-logo-wrapper">
-                <div class="client-logo-carousel d-flex align-items-center justify-content-between">
-                    <div class="client-logo">
-                        <img src="assets/images/client1.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client2.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client3.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client4.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client5.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client2.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client3.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client4.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!-- End Clients Area -->
-
-    <!-- Start Newsletter Area -->
-    <section class="newsletter section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6 col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-text wow fadeInLeft" data-wow-delay=".3s">
-                        <h6>Sign up for Newsletter</h6>
-                        <p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-                <div class="col-lg-6 col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-form wow fadeInRight" data-wow-delay=".5s">
-                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                            <input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
-                            <div class="button">
-                                <button class="btn mouse-dir white-bg">Subscribe Now! <span class="dir-part"></span></button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /End Newsletter Area -->
+    <!-- /End Contact Section -->
 
     <!-- Start Footer Area -->
     <footer class="footer">
@@ -420,12 +343,12 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="left">
-                                <p>Designed and Developed by<a href="https://graygrids.com/" rel="nofollow" target="_blank">GrayGrids</a></p>
+                                <p>Designed and Developed by <a href="https://lyrianmarketingroup.com/">Lyrian Marketing Group</a></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="right">
-                                <p>All Right Reserved Design By Bizfinity</p>
+                                <p>All Right Reserved Design By TilePro</p>
                             </div>
                         </div>
                     </div>
@@ -452,13 +375,13 @@
     <script src="assets/js/main.js"></script>
 	<script type="text/javascript">
             //========= glightbox
-            GLightbox({
-                'href': 'https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s',
-                'type': 'video',
-                'source': 'youtube', //vimeo, youtube or local
-                'width': 900,
-                'autoplayVideos': true,
-            });
+            // GLightbox({
+            //     'href': 'https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s',
+            //     'type': 'video',
+            //     'source': 'youtube', //vimeo, youtube or local
+            //     'width': 900,
+            //     'autoplayVideos': true,
+            // });
 			
 			//====== Clients Logo Slider
 			tns({
